@@ -20,7 +20,7 @@ export class QuadrantComponent implements OnInit {
     let quadrant = new Quadrant(this.sidelength);
 
     this.calculatedArea = quadrant.Area();
-    this.calculatedCircumference = quadrant.Area();
+    this.calculatedCircumference = quadrant.Circumference();
 
   }
 

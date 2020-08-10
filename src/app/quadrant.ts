@@ -14,7 +14,7 @@ export class Quadrant extends Square {
     }
 
     public Circumference(): number {
-        return (4 * this._side);
+        return (4 * Number(this._side));
     }
 
 }

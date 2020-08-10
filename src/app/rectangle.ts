@@ -1,7 +1,7 @@
 export class Rectangle {
 
-    private _a = 1;
-    private _b = 1;
+    private _a: number;
+    private _b: number;
 
     constructor(a: number, b: number){
         this._a = a;
@@ -13,7 +13,8 @@ export class Rectangle {
     }
 
     public Circumference(): number {
-        return (2 * (this._a + this._b));
+      
+        return 2 * (Number(this._a) + Number(this._b));
     }
 
 

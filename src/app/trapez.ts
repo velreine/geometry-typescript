@@ -22,6 +22,7 @@ export class Trapez extends Square {
     }
 
     public Circumference(): number {
+        throw 'Trapez::Circumference() not yet implemented';
         return 0;
     }
 }

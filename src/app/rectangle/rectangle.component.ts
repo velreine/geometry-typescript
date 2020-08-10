@@ -20,10 +20,10 @@ export class RectangleComponent implements OnInit {
   
 
   calculateAreaHandler() {
-    let rectangle = new Rectangle(this.side_a, this.side_b);
+    const rectangle = new Rectangle(this.side_a, this.side_b);
 
     this.calculatedArea = rectangle.Area();
-    this.calculatedCircumference = rectangle.Area();
+    this.calculatedCircumference = rectangle.Circumference();
   }
 
   ngOnInit(): void {
