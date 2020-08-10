@@ -1,5 +1,5 @@
 import { Square } from './square'
-
+// TODO: Fix me.
 export class Trapez extends Square {
 
     private _a: number = 1;
