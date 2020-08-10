@@ -1,0 +1,50 @@
+<div class="row">
+    <div class="col-6 offset-3">
+        <h1>Rektangel Areal/Omkreds Beregner</h1>
+    </div>
+</div>
+
+<div class="row">
+  <div class="col-6 offset-3">
+    <div class="form-group">
+      <label for="side_a">Side A:</label>
+      <input
+        class="form-control"
+        type="number"
+        name="side_a"
+        id="side_a"
+        [value]="side_a"
+        (input)="side_a = $event.target.value"
+        (change)="calculateAreaHandler()"
+      />
+    </div>
+    <div class="form-group">
+        <label for="side_b">Side B:</label>
+        <input
+          class="form-control"
+          type="number"
+          name="side_b"
+          id="side_b"
+          [value]="side_b"
+          (input)="side_b = $event.target.value"
+          (change)="calculateAreaHandler()"
+        />
+      </div>
+    <!-- <button
+      class="btn btn-primary btn-block"
+      (click)="calculateAreaHandler()"
+      type="submit"
+    >
+      Beregn Areal & Omkreds
+    </button> -->
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-6 offset-3">
+    <!-- <div *ngIf="calculatedArea > 0 && calculatedCircumference > 0"> -->
+      <p>Calculated Area: {{ calculatedArea }}</p> 
+      <p>Calculated Circumference: {{ calculatedCircumference }}</p>
+    <!-- </div> -->
+  </div>
+</div>
